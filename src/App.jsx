@@ -1,16 +1,15 @@
-
-
 // components
-import Header from "./component/Header"
-
-
+import HomePage from "./component/home/HomePage";
+import Layout from "./component/layout/Layout";
 
 function App() {
   return (
     <>
-    <Header />
+      <Layout>
+        <HomePage />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -3,21 +3,21 @@ import BookIcon from "@mui/icons-material/Book";
 
 function Header() {
   return (
-    <div>
+    <header>
       <AppBar
         position="sticky"
-        sx={{ backgroundColor: "#378bae", color: "#e8ede7" }}
+        sx={{ backgroundColor: "#036280", color: "#e8ede7" }}
       >
         <Container maxWidth="lg">
           <Toolbar>
             <Typography component="h1" variant="h4" fontWeight="bold" flex={1}>
-              وبلاگ گلابی
+            گلابی بلاگ
             </Typography>
             <BookIcon />
           </Toolbar>
         </Container>
       </AppBar>
-    </div>
+    </header>
   );
 }
 
