@@ -10,7 +10,7 @@ import "./styles/index.css";
 import "./styles/fonts.css";
 
 const client = new ApolloClient({
-  uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clwx4cx40072707tetzuppwid/master",
+  uri: "https://eu-central-1-shared-euc1-02.cdn.hygraph.com/content/clwx4cx40072707tetzuppwid/master",
   cache: new InMemoryCache(),
 });
 

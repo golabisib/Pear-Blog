@@ -1,5 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
-import Authors from "../aothur/Authors";
+import Authors from "../author/Authors";
 import Blog from "../blog/Blog";
 
 function HomePage() {
