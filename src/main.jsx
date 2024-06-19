@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 import { ThemeProvider } from "@mui/material";
-import theme from "./MUI/theme.js";
-import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
 
+import App from "./App.jsx";
+import theme from "./MUI/theme.js";
 import "./styles/index.css";
 import "./styles/fonts.css";
 
@@ -17,9 +18,11 @@ const client = new ApolloClient({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>
 );

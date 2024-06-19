@@ -10,7 +10,7 @@ import {
   Divider,
   Typography,
 } from "@mui/material";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CardEl({ title, slug, coverPhoto, author }) {
   return (
@@ -53,7 +53,7 @@ function CardEl({ title, slug, coverPhoto, author }) {
         </CardContent>
         <Divider variant="middle" sx={{ margin: "10px" }} />
         <CardActions>
-          {/* <Link to={"/blogs/${slug}"} style={{textDecoration:"none", width: "100%"}} > */}
+          <Link to={`/blogs/${slug}`} style={{textDecoration:"none", width: "100%"}} >
             <Button
               variant="outlined"
               size="medium"
@@ -67,7 +67,7 @@ function CardEl({ title, slug, coverPhoto, author }) {
             >
               مطالعه مقاله
             </Button>
-          {/* </Link> */}
+          </Link>
         </CardActions>
       </Card>
     </div>
