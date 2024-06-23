@@ -5,8 +5,8 @@ import CardEl from "../shared/CardEl";
 
 function Blog() {
   const { loading, data, errors } = useQuery(GET_BLOGS_INFO);
-  if (loading) return <h4>Loading...</h4>;
-  if (errors) return <h4>Error</h4>;
+  if (loading) return <p>Loading...</p>;
+  if (errors) return <p>Error</p>;
 
   return (
     <Grid container spacing={2}>

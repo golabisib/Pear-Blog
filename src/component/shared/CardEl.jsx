@@ -21,6 +21,7 @@ function CardEl({ title, slug, coverPhoto, author }) {
           borderRadius: "4px",
         }}
       >
+        {author &&
         <CardHeader
           avatar={<Avatar src={author.avatar.url} sx={{ marginLeft: 2 }} />}
           title={
@@ -34,6 +35,7 @@ function CardEl({ title, slug, coverPhoto, author }) {
             </Typography>
           }
         />
+         }
         <CardMedia
           component="img"
           height="194"
