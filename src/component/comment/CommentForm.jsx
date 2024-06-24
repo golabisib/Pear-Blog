@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import { useState } from "react";
 import { Button, Container, Grid, TextField, Typography } from "@mui/material";
 import { useMutation } from "@apollo/client";
@@ -10,7 +11,7 @@ function CommentForm({ slug }) {
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
 
-  const [sendComment, { loading, data, errors }] = useMutation(SEND_COMMENT, {
+  const [sendComment, { loading, data }] = useMutation(SEND_COMMENT, {
     variables: { name, email, text, slug },
   });
 
@@ -97,6 +98,10 @@ function CommentForm({ slug }) {
       <ToastContainer />
     </Container>
   );
+}
+
+CommentForm.propTypes = {
+  slug: PropTypes.string
 }
 
 export default CommentForm;
