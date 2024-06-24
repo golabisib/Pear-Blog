@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
+import { Avatar, Container, Grid, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { GET_AUTHOR_INFO } from "../../graphql/queries";
-import { Avatar, Container, Grid, Typography } from "@mui/material";
 import sanitizeHtml from "sanitize-html";
 import CardEl from "../shared/CardEl";
 import Loader from "../shared/Loader";

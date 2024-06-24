@@ -1,8 +1,8 @@
 import { useQuery } from "@apollo/client";
+import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import { GET_POST_INFO } from "../../graphql/queries";
 import Loader from "../shared/Loader";
-import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import sanitizeHtml from "sanitize-html";
 import CommentForm from "../comment/CommentForm";

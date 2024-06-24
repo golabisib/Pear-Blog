@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { GET_AUTHORS_INFO } from "../../graphql/queries";
 import { Avatar, Divider, Grid, Typography } from "@mui/material";
+import { GET_AUTHORS_INFO } from "../../graphql/queries";
 import { Link } from "react-router-dom";
 import Loader from "../shared/Loader";
 
