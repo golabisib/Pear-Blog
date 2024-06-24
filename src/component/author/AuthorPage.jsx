@@ -15,7 +15,6 @@ function AuthorPage() {
 
   if (loading) return <Loader />;
   if (errors) return <p>Error</p>;
-  console.log(data);
   const { author } = data;
   // description of author need added to API
   return (

@@ -9,7 +9,6 @@ function Authors() {
   const { loading, data, errors } = useQuery(GET_AUTHORS_INFO);
   if (loading) return <Loader />;
   if (errors) return <p>Error</p>;
-  console.log(data);
   const { authors } = data;
   return (
     <Grid
